@@ -6,81 +6,48 @@
 !.ddev
 !.php-cs-fixer.php
 !.github/ci-files/.my.cnf
-.ddev/mautic-preference
-/.ddev/docker-compose.host-docker-internal.yaml
-!/.ddev/.env.*.dist
-!.gitpod.Dockerfile
-!.gitpod.yml
-!.ddev/commands/web/dd
-.php_cs.cache
-/.env.local
-/.env.local.php
-/.env.*.local
-/composer.phar
-/coverage.xml
-/app/bootstrap*
-/app/console
-/app/tests.bootstrap*
-/app/phpunit.xml
-
-/var/bootstrap*
-
-/app/bundles/CoreBundle/Assets/css/app/less/**/*.css
-/app/bundles/CoreBundle/Assets/css/libraries/**/*.css
-/app/bundles/CoreBundle/Assets/css/libraries/Froala/plugins/*.css
-!/app/bundles/CoreBundle/Assets/css/libraries/builder.css
-!/app/bundles/CoreBundle/Assets/css/libraries/froala/plugins/gated_video.css
-!/app/bundles/CoreBundle/Assets/css/*.css
-
-/app/cache/*
-!/app/cache/.gitkeep
-/var/cache/*
-!/var/cache/.gitkeep
-
-/var/phpstan-cache/*
-
-/app/logs/*
-!/app/logs/.gitkeep
-/var/logs/*
-!/var/logs/.gitkeep
-
-/app/spool/*
-!/app/spool/.gitkeep
-/var/spool/*
-!/var/spool/.gitkeep
-
-/var/tmp/*
-!/var/tmp/.gitkeep
-
+# Sensitive files
+.env
+.env.local
+.env.*.local
+.env.local.php
 /app/config/local*.php
 /app/config/config_local.php
 /app/config/paths_local.php
 /app/config/parameters_defaults.php
+/app/upgrade/
+# Cache and logs
+/app/cache/*
+!/app/cache/.gitkeep
+/var/cache/*
+!/var/cache/.gitkeep
+/var/phpstan-cache/*
+/app/logs/*
+!/app/logs/.gitkeep
+/var/logs/*
+!/var/logs/.gitkeep
+/app/spool/*
+!/app/spool/.gitkeep
+/var/spool/*
+!/var/spool/.gitkeep
+/var/tmp/*
+!/var/tmp/.gitkeep
 
-/config/*
-!/config/.gitkeep
-
+# Build and dependencies
 /vendor/*
 !/vendor/.htaccess
-
 /bin/*
 !/bin/.htaccess
 !/bin/console
-
-/assets/ckeditor/build/*
-
-/bundles
 /node_modules
 /build/coverage
 /build/packaging
 /build/packages/*
 !/build/packages/.placeholder
-/mockup
-/upgrade
-/upgrade_errors.txt
 
+# Media and assets
+/assets/ckeditor/build/*
 /media/libraries/ckeditor/*
-!/media/libraries/ckeditor/
 /media/bundles/*
 /media/dashboards/*
 !/media/dashboards/*.json
@@ -105,6 +72,7 @@
 /media/js/froogaloop.min.js
 /media/js/jquery.min.js
 
+# Plugins and themes
 /plugins/*
 !/plugins/GrapesJsBuilderBundle
 !/plugins/MauticClearbitBundle
@@ -121,7 +89,6 @@
 !/plugins/MauticTagManagerBundle
 !/plugins/index.html
 !/plugins/.gitkeep
-
 /themes/*
 !/themes/aurora
 !/themes/blank
@@ -144,4 +111,30 @@
 !/themes/blank.png
 !/themes/blank-big.png
 
+# Miscellaneous
+/mockup
+/upgrade
+/upgrade_errors.txt
 /translations
+
+# Unnecessary files and folders
+.idea
+.vscode
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+*.old
+*.orig
+*.rej
+*.patch
+*.diff
+*.cache
+*.pid
+*.seed
+
+# Ignore everything inside app/upgrade folder
+/app/upgrade/**
