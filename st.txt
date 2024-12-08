@@ -1,0 +1,767 @@
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   .gitignore
+	modified:   docroot/app/assets/dashboards/alternative-default.json
+	modified:   docroot/app/assets/dashboards/default.json
+	modified:   docroot/app/assets/dashboards/email-overview.json
+	modified:   docroot/app/assets/dashboards/stats-overview.json
+	deleted:    docroot/app/assets/images/flags/Turkey.png
+	modified:   docroot/app/assets/js/mautic-form-src.js
+	modified:   docroot/app/assets/libraries/ckeditor/src/TokenPlugin.js
+	modified:   docroot/app/assets/scaffold/files/package-lock.json
+	modified:   docroot/app/assets/scaffold/files/package.json
+	modified:   docroot/app/bundles/ApiBundle/Config/config.php
+	modified:   docroot/app/bundles/ApiBundle/Controller/ClientController.php
+	modified:   docroot/app/bundles/ApiBundle/Entity/oAuth2/ClientRepository.php
+	modified:   docroot/app/bundles/ApiBundle/Resources/views/Client/list.html.twig
+	modified:   docroot/app/bundles/ApiBundle/Resources/views/Security/login.html.twig
+	modified:   docroot/app/bundles/ApiBundle/Translations/en_US/messages.ini
+	modified:   docroot/app/bundles/AssetBundle/Assets/css/asset.css
+	modified:   docroot/app/bundles/AssetBundle/Assets/js/asset.js
+	modified:   docroot/app/bundles/AssetBundle/Entity/Asset.php
+	modified:   docroot/app/bundles/AssetBundle/Entity/DownloadRepository.php
+	modified:   docroot/app/bundles/AssetBundle/Model/AssetModel.php
+	modified:   docroot/app/bundles/AssetBundle/Resources/views/Asset/details.html.twig
+	modified:   docroot/app/bundles/AssetBundle/Resources/views/Asset/form.html.twig
+	modified:   docroot/app/bundles/AssetBundle/Resources/views/Asset/list.html.twig
+	modified:   docroot/app/bundles/AssetBundle/Resources/views/Asset/preview.html.twig
+	modified:   docroot/app/bundles/AssetBundle/Resources/views/Remote/browse.html.twig
+	modified:   docroot/app/bundles/AssetBundle/Resources/views/SubscribedEvents/Search/global.html.twig
+	modified:   docroot/app/bundles/AssetBundle/Translations/en_US/messages.ini
+	modified:   docroot/app/bundles/CampaignBundle/Assets/css/campaign.css
+	modified:   docroot/app/bundles/CampaignBundle/Assets/js/campaign.js
+	modified:   docroot/app/bundles/CampaignBundle/Config/config.php
+	modified:   docroot/app/bundles/CampaignBundle/Config/services.php
+	modified:   docroot/app/bundles/CampaignBundle/Controller/Api/CampaignApiController.php
+	modified:   docroot/app/bundles/CampaignBundle/Entity/Event.php
+	modified:   docroot/app/bundles/CampaignBundle/Entity/LeadEventLogRepository.php
+	modified:   docroot/app/bundles/CampaignBundle/EventListener/CampaignActionChangeMembershipSubscriber.php
+	modified:   docroot/app/bundles/CampaignBundle/EventListener/LeadSubscriber.php
+	modified:   docroot/app/bundles/CampaignBundle/Executioner/EventExecutioner.php
+	modified:   docroot/app/bundles/CampaignBundle/Executioner/ScheduledExecutioner.php
+	modified:   docroot/app/bundles/CampaignBundle/Executioner/Scheduler/EventScheduler.php
+	modified:   docroot/app/bundles/CampaignBundle/Executioner/Scheduler/Mode/Interval.php
+	modified:   docroot/app/bundles/CampaignBundle/Form/Type/CampaignEventAddRemoveLeadType.php
+	modified:   docroot/app/bundles/CampaignBundle/Form/Type/CampaignType.php
+	modified:   docroot/app/bundles/CampaignBundle/Form/Type/ConfigType.php
+	modified:   docroot/app/bundles/CampaignBundle/Form/Type/EventType.php
+	modified:   docroot/app/bundles/CampaignBundle/Model/CampaignModel.php
+	modified:   docroot/app/bundles/CampaignBundle/Resources/views/Campaign/Builder/_event_list.html.twig
+	modified:   docroot/app/bundles/CampaignBundle/Resources/views/Campaign/Builder/_index.html.twig
+	modified:   docroot/app/bundles/CampaignBundle/Resources/views/Campaign/_builder.html.twig
+	modified:   docroot/app/bundles/CampaignBundle/Resources/views/Campaign/_events.html.twig
+	modified:   docroot/app/bundles/CampaignBundle/Resources/views/Campaign/_preview.html.twig
+	modified:   docroot/app/bundles/CampaignBundle/Resources/views/Campaign/details.html.twig
+	modified:   docroot/app/bundles/CampaignBundle/Resources/views/Campaign/list.html.twig
+	modified:   docroot/app/bundles/CampaignBundle/Resources/views/Event/_generic.html.twig
+	modified:   docroot/app/bundles/CampaignBundle/Resources/views/Event/_preview.html.twig
+	modified:   docroot/app/bundles/CampaignBundle/Resources/views/Event/form.html.twig
+	modified:   docroot/app/bundles/CampaignBundle/Resources/views/Event/jump.html.twig
+	modified:   docroot/app/bundles/CampaignBundle/Resources/views/FormTheme/Config/_config_campaignconfig_widget.html.twig
+	modified:   docroot/app/bundles/CampaignBundle/Resources/views/Source/_index.html.twig
+	modified:   docroot/app/bundles/CampaignBundle/Resources/views/SubscribedEvents/Timeline/index.html.twig
+	modified:   docroot/app/bundles/CampaignBundle/Translations/en_US/messages.ini
+	modified:   docroot/app/bundles/CampaignBundle/Translations/en_US/validators.ini
+	modified:   docroot/app/bundles/CategoryBundle/Config/config.php
+	modified:   docroot/app/bundles/CategoryBundle/EventListener/ButtonSubscriber.php
+	modified:   docroot/app/bundles/CategoryBundle/Resources/views/Category/list.html.twig
+	modified:   docroot/app/bundles/CategoryBundle/Translations/en_US/messages.ini
+	modified:   docroot/app/bundles/ChannelBundle/Entity/MessageQueue.php
+	modified:   docroot/app/bundles/ChannelBundle/Entity/MessageQueueRepository.php
+	modified:   docroot/app/bundles/ChannelBundle/EventListener/ButtonSubscriber.php
+	modified:   docroot/app/bundles/ChannelBundle/EventListener/LeadSubscriber.php
+	modified:   docroot/app/bundles/ChannelBundle/Resources/views/Message/details.html.twig
+	modified:   docroot/app/bundles/ChannelBundle/Resources/views/Message/form.html.twig
+	modified:   docroot/app/bundles/ChannelBundle/Resources/views/Message/list_item.html.twig
+	modified:   docroot/app/bundles/ChannelBundle/Resources/views/SubscribedEvents/Timeline/queued_messages.html.twig
+	modified:   docroot/app/bundles/ConfigBundle/Assets/js/config.js
+	modified:   docroot/app/bundles/ConfigBundle/Config/config.php
+	modified:   docroot/app/bundles/ConfigBundle/Form/Type/DsnType.php
+	modified:   docroot/app/bundles/ConfigBundle/Resources/views/Config/form.html.twig
+	modified:   docroot/app/bundles/ConfigBundle/Resources/views/FormTheme/dsn_row.html.twig
+	modified:   docroot/app/bundles/ConfigBundle/Resources/views/Sysinfo/index.html.twig
+	modified:   docroot/app/bundles/CoreBundle/Assets/css/app.css
+	modified:   docroot/app/bundles/CoreBundle/Assets/css/app.less
+	modified:   docroot/app/bundles/CoreBundle/Assets/css/app/less/components/alerts.less
+	modified:   docroot/app/bundles/CoreBundle/Assets/css/app/less/components/brand.less
+	modified:   docroot/app/bundles/CoreBundle/Assets/css/app/less/components/builder.less
+	modified:   docroot/app/bundles/CoreBundle/Assets/css/app/less/components/button-groups.less
+	modified:   docroot/app/bundles/CoreBundle/Assets/css/app/less/components/buttons.less
+	modified:   docroot/app/bundles/CoreBundle/Assets/css/app/less/components/calendar.less
+	modified:   docroot/app/bundles/CoreBundle/Assets/css/app/less/components/colors.less
+	modified:   docroot/app/bundles/CoreBundle/Assets/css/app/less/components/dropdowns.less
+	modified:   docroot/app/bundles/CoreBundle/Assets/css/app/less/components/editor.less
+	modified:   docroot/app/bundles/CoreBundle/Assets/css/app/less/components/forms.less
+	modified:   docroot/app/bundles/CoreBundle/Assets/css/app/less/components/grid.less
+	modified:   docroot/app/bundles/CoreBundle/Assets/css/app/less/components/image.less
+	modified:   docroot/app/bundles/CoreBundle/Assets/css/app/less/components/input-groups.less
+	modified:   docroot/app/bundles/CoreBundle/Assets/css/app/less/components/labels.less
+	modified:   docroot/app/bundles/CoreBundle/Assets/css/app/less/components/list-group.less
+	modified:   docroot/app/bundles/CoreBundle/Assets/css/app/less/components/maps.less
+	modified:   docroot/app/bundles/CoreBundle/Assets/css/app/less/components/media.less
+	modified:   docroot/app/bundles/CoreBundle/Assets/css/app/less/components/navs.less
+	modified:   docroot/app/bundles/CoreBundle/Assets/css/app/less/components/notes.less
+	modified:   docroot/app/bundles/CoreBundle/Assets/css/app/less/components/panels.less
+	modified:   docroot/app/bundles/CoreBundle/Assets/css/app/less/components/progress-bars.less
+	modified:   docroot/app/bundles/CoreBundle/Assets/css/app/less/components/scaffolding.less
+	modified:   docroot/app/bundles/CoreBundle/Assets/css/app/less/components/table.less
+	modified:   docroot/app/bundles/CoreBundle/Assets/css/app/less/components/timeline.less
+	modified:   docroot/app/bundles/CoreBundle/Assets/css/app/less/components/type.less
+	modified:   docroot/app/bundles/CoreBundle/Assets/css/app/less/components/utilities.less
+	modified:   docroot/app/bundles/CoreBundle/Assets/css/app/less/custom.less
+	modified:   docroot/app/bundles/CoreBundle/Assets/css/app/less/layouts/base.less
+	modified:   docroot/app/bundles/CoreBundle/Assets/css/app/less/layouts/content.less
+	modified:   docroot/app/bundles/CoreBundle/Assets/css/app/less/layouts/footer.less
+	modified:   docroot/app/bundles/CoreBundle/Assets/css/app/less/layouts/header.less
+	modified:   docroot/app/bundles/CoreBundle/Assets/css/app/less/layouts/sidebar.less
+	modified:   docroot/app/bundles/CoreBundle/Assets/css/app/less/mixins.less
+	modified:   docroot/app/bundles/CoreBundle/Assets/css/app/less/variables.less
+	modified:   docroot/app/bundles/CoreBundle/Assets/css/libraries/bootstrap/bootstrap-mautic-custom-variables.less
+	modified:   docroot/app/bundles/CoreBundle/Assets/css/libraries/bootstrap/bootstrap-mautic-custom.less
+	modified:   docroot/app/bundles/CoreBundle/Assets/css/libraries/bootstrap/bootstrap.less
+	modified:   docroot/app/bundles/CoreBundle/Assets/css/libraries/builder.css
+	modified:   docroot/app/bundles/CoreBundle/Assets/css/libraries/builder.less
+	modified:   docroot/app/bundles/CoreBundle/Assets/css/libraries/chosen/bootstrap-chosen-variables.less
+	modified:   docroot/app/bundles/CoreBundle/Assets/css/libraries/chosen/bootstrap-chosen.less
+	deleted:    docroot/app/bundles/CoreBundle/Assets/css/libraries/font-awesome/less/spinning.less
+	modified:   docroot/app/bundles/CoreBundle/Assets/css/libraries/libraries.css
+	modified:   docroot/app/bundles/CoreBundle/Assets/css/libraries/multiselect/multi-select.less
+	modified:   docroot/app/bundles/CoreBundle/Assets/css/libraries/other/typeahead.less
+	modified:   docroot/app/bundles/CoreBundle/Assets/css/libraries/remixicon/fonts/remixicon.less
+	modified:   docroot/app/bundles/CoreBundle/Assets/css/libraries/remixicon/fonts/remixicon.woff2
+	deleted:    docroot/app/bundles/CoreBundle/Assets/css/libraries/remixicon/package.json
+	modified:   docroot/app/bundles/CoreBundle/Assets/js/1.core.js
+	modified:   docroot/app/bundles/CoreBundle/Assets/js/10.entity.js
+	modified:   docroot/app/bundles/CoreBundle/Assets/js/11.editor.js
+	modified:   docroot/app/bundles/CoreBundle/Assets/js/12.tabs.js
+	modified:   docroot/app/bundles/CoreBundle/Assets/js/1a.content.js
+	modified:   docroot/app/bundles/CoreBundle/Assets/js/2.config.js
+	modified:   docroot/app/bundles/CoreBundle/Assets/js/3.update.js
+	modified:   docroot/app/bundles/CoreBundle/Assets/js/4.builder.js
+	modified:   docroot/app/bundles/CoreBundle/Assets/js/6.forms.js
+	modified:   docroot/app/bundles/CoreBundle/Assets/js/9.modals.js
+	modified:   docroot/app/bundles/CoreBundle/Assets/js/libraries/8a.adminre.js
+	modified:   docroot/app/bundles/CoreBundle/Assets/js/libraries/filemanager/index.html.twig
+	modified:   docroot/app/bundles/CoreBundle/Assets/js/libraries/froala/froala_editor.js
+	modified:   docroot/app/bundles/CoreBundle/Assets/json/countries.json
+	modified:   docroot/app/bundles/CoreBundle/Assets/json/regions.json
+	modified:   docroot/app/bundles/CoreBundle/Config/config.php
+	modified:   docroot/app/bundles/CoreBundle/Controller/AjaxController.php
+	modified:   docroot/app/bundles/CoreBundle/Controller/CommonController.php
+	modified:   docroot/app/bundles/CoreBundle/Controller/ThemeController.php
+	modified:   docroot/app/bundles/CoreBundle/Doctrine/AbstractMauticMigration.php
+	modified:   docroot/app/bundles/CoreBundle/Entity/Notification.php
+	modified:   docroot/app/bundles/CoreBundle/EventListener/CoreSubscriber.php
+	modified:   docroot/app/bundles/CoreBundle/EventListener/ReportSubscriber.php
+	modified:   docroot/app/bundles/CoreBundle/Form/ChoiceLoader/EntityLookupChoiceLoader.php
+	modified:   docroot/app/bundles/CoreBundle/Form/Type/ContentPreviewSettingsType.php
+	modified:   docroot/app/bundles/CoreBundle/Form/Type/DateRangeType.php
+	modified:   docroot/app/bundles/CoreBundle/Form/Type/DynamicContentFilterEntryFiltersType.php
+	modified:   docroot/app/bundles/CoreBundle/Form/Type/DynamicContentFilterEntryType.php
+	modified:   docroot/app/bundles/CoreBundle/Form/Type/DynamicListType.php
+	modified:   docroot/app/bundles/CoreBundle/Form/Type/FormButtonsType.php
+	modified:   docroot/app/bundles/CoreBundle/Form/Type/IpLookupDownloadDataStoreButtonType.php
+	modified:   docroot/app/bundles/CoreBundle/Form/Type/ThemeUploadType.php
+	modified:   docroot/app/bundles/CoreBundle/Helper/AssetGenerationHelper.php
+	modified:   docroot/app/bundles/CoreBundle/Helper/Chart/ChartQuery.php
+	modified:   docroot/app/bundles/CoreBundle/Helper/ThemeHelper.php
+	modified:   docroot/app/bundles/CoreBundle/Model/FormModel.php
+	modified:   docroot/app/bundles/CoreBundle/Model/IteratorExportDataModel.php
+	modified:   docroot/app/bundles/CoreBundle/Resources/views/Default/base.html.twig
+	modified:   docroot/app/bundles/CoreBundle/Resources/views/Default/content.html.twig
+	modified:   docroot/app/bundles/CoreBundle/Resources/views/Default/navbar.html.twig
+	modified:   docroot/app/bundles/CoreBundle/Resources/views/Default/output.html.twig
+	modified:   docroot/app/bundles/CoreBundle/Resources/views/Default/pageheader.html.twig
+	modified:   docroot/app/bundles/CoreBundle/Resources/views/Error/base.html.twig
+	modified:   docroot/app/bundles/CoreBundle/Resources/views/Exception/base.html.twig
+	modified:   docroot/app/bundles/CoreBundle/Resources/views/FormTheme/Config/_config_coreconfig_ip_lookup_config_widget.html.twig
+	modified:   docroot/app/bundles/CoreBundle/Resources/views/FormTheme/Config/iplookup_download_data_store_button_row.html.twig
+	modified:   docroot/app/bundles/CoreBundle/Resources/views/FormTheme/form_tabbed.html.twig
+	modified:   docroot/app/bundles/CoreBundle/Resources/views/FormTheme/mautic_form_layout.html.twig
+	modified:   docroot/app/bundles/CoreBundle/Resources/views/Helper/builder.html.twig
+	modified:   docroot/app/bundles/CoreBundle/Resources/views/Helper/builder_buttons.html.twig
+	modified:   docroot/app/bundles/CoreBundle/Resources/views/Helper/chart.html.twig
+	modified:   docroot/app/bundles/CoreBundle/Resources/views/Helper/confirm.html.twig
+	modified:   docroot/app/bundles/CoreBundle/Resources/views/Helper/form_selecttype.html.twig
+	modified:   docroot/app/bundles/CoreBundle/Resources/views/Helper/list_actions.html.twig
+	modified:   docroot/app/bundles/CoreBundle/Resources/views/Helper/list_toolbar.html.twig
+	modified:   docroot/app/bundles/CoreBundle/Resources/views/Helper/map.html.twig
+	modified:   docroot/app/bundles/CoreBundle/Resources/views/Helper/modal.html.twig
+	modified:   docroot/app/bundles/CoreBundle/Resources/views/Helper/noresults.html.twig
+	modified:   docroot/app/bundles/CoreBundle/Resources/views/Helper/page_actions.html.twig
+	modified:   docroot/app/bundles/CoreBundle/Resources/views/Helper/pagination.html.twig
+	modified:   docroot/app/bundles/CoreBundle/Resources/views/Helper/publishstatus_badge.html.twig
+	modified:   docroot/app/bundles/CoreBundle/Resources/views/Helper/publishstatus_icon.html.twig
+	modified:   docroot/app/bundles/CoreBundle/Resources/views/Helper/recentactivity.html.twig
+	modified:   docroot/app/bundles/CoreBundle/Resources/views/Helper/search.html.twig
+	modified:   docroot/app/bundles/CoreBundle/Resources/views/Helper/tableheader.html.twig
+	modified:   docroot/app/bundles/CoreBundle/Resources/views/Helper/tabs.html.twig
+	modified:   docroot/app/bundles/CoreBundle/Resources/views/Helper/theme_select.html.twig
+	modified:   docroot/app/bundles/CoreBundle/Resources/views/Helper/usage.html.twig
+	modified:   docroot/app/bundles/CoreBundle/Resources/views/LeftPanel/index.html.twig
+	modified:   docroot/app/bundles/CoreBundle/Resources/views/Menu/admin.html.twig
+	modified:   docroot/app/bundles/CoreBundle/Resources/views/Menu/profile.html.twig
+	modified:   docroot/app/bundles/CoreBundle/Resources/views/Notification/flash_messages.html.twig
+	modified:   docroot/app/bundles/CoreBundle/Resources/views/Notification/notification.html.twig
+	modified:   docroot/app/bundles/CoreBundle/Resources/views/Notification/notification_messages.html.twig
+	modified:   docroot/app/bundles/CoreBundle/Resources/views/Notification/notifications.html.twig
+	modified:   docroot/app/bundles/CoreBundle/Resources/views/Offline/offline.html.twig
+	deleted:    docroot/app/bundles/CoreBundle/Resources/views/RightPanel/index.html.twig
+	modified:   docroot/app/bundles/CoreBundle/Resources/views/Slots/saveprefsbutton.html.twig
+	modified:   docroot/app/bundles/CoreBundle/Resources/views/Standard/list.html.twig
+	modified:   docroot/app/bundles/CoreBundle/Resources/views/Theme/index.html.twig
+	modified:   docroot/app/bundles/CoreBundle/Resources/views/Theme/list.html.twig
+	modified:   docroot/app/bundles/CoreBundle/Resources/views/Update/index.html.twig
+	modified:   docroot/app/bundles/CoreBundle/Resources/views/Update/schema.html.twig
+	modified:   docroot/app/bundles/CoreBundle/Resources/views/Update/update.html.twig
+	modified:   docroot/app/bundles/CoreBundle/Resources/views/Variant/index.html.twig
+	modified:   docroot/app/bundles/CoreBundle/Resources/views/Variant/row.html.twig
+	modified:   docroot/app/bundles/CoreBundle/Security/Permissions/AbstractPermissions.php
+	modified:   docroot/app/bundles/CoreBundle/Security/Permissions/CorePermissions.php
+	modified:   docroot/app/bundles/CoreBundle/Service/FlashBag.php
+	modified:   docroot/app/bundles/CoreBundle/Session/Storage/Handler/RedisSentinelSessionHandler.php
+	modified:   docroot/app/bundles/CoreBundle/Translations/en_US/javascript.ini
+	modified:   docroot/app/bundles/CoreBundle/Translations/en_US/messages.ini
+	modified:   docroot/app/bundles/CoreBundle/Twig/Extension/ButtonExtension.php
+	modified:   docroot/app/bundles/CoreBundle/Twig/Extension/DateExtension.php
+	modified:   docroot/app/bundles/CoreBundle/Twig/Helper/AssetsHelper.php
+	modified:   docroot/app/bundles/CoreBundle/Twig/Helper/ButtonHelper.php
+	modified:   docroot/app/bundles/CoreBundle/Twig/Helper/DateHelper.php
+	modified:   docroot/app/bundles/DashboardBundle/Assets/css/dashboard.css
+	modified:   docroot/app/bundles/DashboardBundle/Assets/js/dashboard.js
+	modified:   docroot/app/bundles/DashboardBundle/Event/WidgetDetailEvent.php
+	modified:   docroot/app/bundles/DashboardBundle/Model/DashboardModel.php
+	modified:   docroot/app/bundles/DashboardBundle/Resources/views/Dashboard/import.html.twig
+	modified:   docroot/app/bundles/DashboardBundle/Resources/views/Dashboard/index.html.twig
+	modified:   docroot/app/bundles/DashboardBundle/Resources/views/Dashboard/upcomingemails.html.twig
+	modified:   docroot/app/bundles/DashboardBundle/Resources/views/Widget/detail.html.twig
+	modified:   docroot/app/bundles/DashboardBundle/Translations/en_US/messages.ini
+	modified:   docroot/app/bundles/DynamicContentBundle/Assets/js/dynamicContent.js
+	modified:   docroot/app/bundles/DynamicContentBundle/Entity/Stat.php
+	modified:   docroot/app/bundles/DynamicContentBundle/Entity/StatRepository.php
+	modified:   docroot/app/bundles/DynamicContentBundle/EventListener/LeadSubscriber.php
+	modified:   docroot/app/bundles/DynamicContentBundle/Resources/views/DynamicContent/_list.html.twig
+	modified:   docroot/app/bundles/DynamicContentBundle/Resources/views/DynamicContent/details.html.twig
+	modified:   docroot/app/bundles/DynamicContentBundle/Resources/views/DynamicContent/form.html.twig
+	modified:   docroot/app/bundles/DynamicContentBundle/Resources/views/DynamicContent/list.html.twig
+	modified:   docroot/app/bundles/DynamicContentBundle/Resources/views/FormTheme/Filter/layout.html.twig
+	modified:   docroot/app/bundles/DynamicContentBundle/Translations/en_US/messages.ini
+	modified:   docroot/app/bundles/EmailBundle/Assets/js/config.js
+	modified:   docroot/app/bundles/EmailBundle/Assets/js/email.js
+	modified:   docroot/app/bundles/EmailBundle/Config/config.php
+	modified:   docroot/app/bundles/EmailBundle/Controller/EmailController.php
+	modified:   docroot/app/bundles/EmailBundle/Controller/PublicController.php
+	modified:   docroot/app/bundles/EmailBundle/DataFixtures/ORM/fakeemaildata.csv
+	modified:   docroot/app/bundles/EmailBundle/EmailEvents.php
+	modified:   docroot/app/bundles/EmailBundle/Entity/Email.php
+	modified:   docroot/app/bundles/EmailBundle/Entity/EmailReplyRepository.php
+	modified:   docroot/app/bundles/EmailBundle/Entity/EmailRepository.php
+	modified:   docroot/app/bundles/EmailBundle/Entity/StatRepository.php
+	modified:   docroot/app/bundles/EmailBundle/Event/EmailSendEvent.php
+	modified:   docroot/app/bundles/EmailBundle/EventListener/BuilderSubscriber.php
+	modified:   docroot/app/bundles/EmailBundle/EventListener/CampaignConditionSubscriber.php
+	modified:   docroot/app/bundles/EmailBundle/EventListener/EmailSubscriber.php
+	modified:   docroot/app/bundles/EmailBundle/EventListener/LeadSubscriber.php
+	modified:   docroot/app/bundles/EmailBundle/EventListener/MatchFilterForLeadTrait.php
+	modified:   docroot/app/bundles/EmailBundle/EventListener/ReportSubscriber.php
+	modified:   docroot/app/bundles/EmailBundle/EventListener/TokenSubscriber.php
+	modified:   docroot/app/bundles/EmailBundle/Form/Type/ConfigMonitoredMailboxesType.php
+	modified:   docroot/app/bundles/EmailBundle/Form/Type/ConfigType.php
+	modified:   docroot/app/bundles/EmailBundle/Form/Type/EmailSendType.php
+	modified:   docroot/app/bundles/EmailBundle/Form/Type/EmailType.php
+	modified:   docroot/app/bundles/EmailBundle/Form/Type/ExampleSendType.php
+	modified:   docroot/app/bundles/EmailBundle/Helper/EmailValidator.php
+	modified:   docroot/app/bundles/EmailBundle/Helper/MailHelper.php
+	modified:   docroot/app/bundles/EmailBundle/Mailer/Message/MauticMessage.php
+	modified:   docroot/app/bundles/EmailBundle/Model/EmailModel.php
+	modified:   docroot/app/bundles/EmailBundle/MonitoredEmail/Mailbox.php
+	modified:   docroot/app/bundles/EmailBundle/Resources/views/Email/_list.html.twig
+	modified:   docroot/app/bundles/EmailBundle/Resources/views/Email/details.html.twig
+	modified:   docroot/app/bundles/EmailBundle/Resources/views/Email/form.html.twig
+	modified:   docroot/app/bundles/EmailBundle/Resources/views/Email/list.html.twig
+	modified:   docroot/app/bundles/EmailBundle/Resources/views/FormTheme/Config/_config_emailconfig_widget.html.twig
+	modified:   docroot/app/bundles/EmailBundle/Resources/views/FormTheme/Config/monitored_mailboxes_widget.html.twig
+	modified:   docroot/app/bundles/EmailBundle/Resources/views/FormTheme/Email/layout.html.twig
+	modified:   docroot/app/bundles/EmailBundle/Resources/views/FormTheme/EmailSendList/emailsend_list_row.html.twig
+	modified:   docroot/app/bundles/EmailBundle/Resources/views/Lead/preference_options.html.twig
+	modified:   docroot/app/bundles/EmailBundle/Resources/views/Send/form.html.twig
+	modified:   docroot/app/bundles/EmailBundle/Resources/views/SubscribedEvents/Search/global.html.twig
+	modified:   docroot/app/bundles/EmailBundle/Translations/en_US/messages.ini
+	modified:   docroot/app/bundles/EmailBundle/Translations/en_US/validators.ini
+	modified:   docroot/app/bundles/FormBundle/Assets/css/form.css
+	modified:   docroot/app/bundles/FormBundle/Assets/js/form.js
+	modified:   docroot/app/bundles/FormBundle/Config/config.php
+	modified:   docroot/app/bundles/FormBundle/Controller/AjaxController.php
+	modified:   docroot/app/bundles/FormBundle/Controller/FormController.php
+	modified:   docroot/app/bundles/FormBundle/Controller/PublicController.php
+	modified:   docroot/app/bundles/FormBundle/Entity/Field.php
+	modified:   docroot/app/bundles/FormBundle/Entity/FieldRepository.php
+	modified:   docroot/app/bundles/FormBundle/Entity/SubmissionRepository.php
+	modified:   docroot/app/bundles/FormBundle/EventListener/LeadSubscriber.php
+	modified:   docroot/app/bundles/FormBundle/EventListener/ReportSubscriber.php
+	modified:   docroot/app/bundles/FormBundle/Form/Type/FieldType.php
+	modified:   docroot/app/bundles/FormBundle/Form/Type/FormType.php
+	modified:   docroot/app/bundles/FormBundle/Form/Type/SubmitActionRepostType.php
+	modified:   docroot/app/bundles/FormBundle/Helper/FormFieldHelper.php
+	modified:   docroot/app/bundles/FormBundle/Model/ActionModel.php
+	modified:   docroot/app/bundles/FormBundle/Model/FormModel.php
+	modified:   docroot/app/bundles/FormBundle/Model/SubmissionModel.php
+	modified:   docroot/app/bundles/FormBundle/Resources/views/Builder/_actions.html.twig
+	modified:   docroot/app/bundles/FormBundle/Resources/views/Builder/_field_wrapper.html.twig
+	modified:   docroot/app/bundles/FormBundle/Resources/views/Builder/_style.html.twig
+	modified:   docroot/app/bundles/FormBundle/Resources/views/Builder/field.html.twig
+	modified:   docroot/app/bundles/FormBundle/Resources/views/Builder/index.html.twig
+	modified:   docroot/app/bundles/FormBundle/Resources/views/Field/button.html.twig
+	modified:   docroot/app/bundles/FormBundle/Resources/views/Field/freehtml.html.twig
+	modified:   docroot/app/bundles/FormBundle/Resources/views/Field/freetext.html.twig
+	modified:   docroot/app/bundles/FormBundle/Resources/views/Field/group.html.twig
+	modified:   docroot/app/bundles/FormBundle/Resources/views/Field/hidden.html.twig
+	modified:   docroot/app/bundles/FormBundle/Resources/views/Field/pagebreak.html.twig
+	modified:   docroot/app/bundles/FormBundle/Resources/views/Field/select.html.twig
+	modified:   docroot/app/bundles/FormBundle/Resources/views/Field/text.html.twig
+	modified:   docroot/app/bundles/FormBundle/Resources/views/Form/_details_fields_list.html.twig
+	modified:   docroot/app/bundles/FormBundle/Resources/views/Form/_list.html.twig
+	modified:   docroot/app/bundles/FormBundle/Resources/views/Form/details.html.twig
+	modified:   docroot/app/bundles/FormBundle/Resources/views/Form/list.html.twig
+	modified:   docroot/app/bundles/FormBundle/Resources/views/Result/list.html.twig
+	modified:   docroot/app/bundles/FormBundle/Resources/views/SubscribedEvents/AbTest/submissions.html.twig
+	modified:   docroot/app/bundles/FormBundle/Resources/views/SubscribedEvents/Search/global.html.twig
+	modified:   docroot/app/bundles/FormBundle/Translations/en_US/messages.ini
+	modified:   docroot/app/bundles/FormBundle/Translations/en_US/validators.ini
+	modified:   docroot/app/bundles/InstallBundle/Assets/install/install.js
+	modified:   docroot/app/bundles/InstallBundle/Configurator/Form/DoctrineStepType.php
+	modified:   docroot/app/bundles/InstallBundle/Configurator/Form/UserStepType.php
+	modified:   docroot/app/bundles/InstallBundle/Resources/views/Install/check.html.twig
+	modified:   docroot/app/bundles/InstallBundle/Resources/views/Install/final.html.twig
+	modified:   docroot/app/bundles/IntegrationsBundle/EventListener/TimelineSubscriber.php
+	modified:   docroot/app/bundles/IntegrationsBundle/Resources/views/Auth/authenticated.html.twig
+	modified:   docroot/app/bundles/IntegrationsBundle/Resources/views/Config/form.html.twig
+	modified:   docroot/app/bundles/IntegrationsBundle/Sync/Notification/BulkNotification.php
+	modified:   docroot/app/bundles/IntegrationsBundle/Sync/Notification/Writer.php
+	modified:   docroot/app/bundles/LeadBundle/Assets/css/lead.css
+	modified:   docroot/app/bundles/LeadBundle/Assets/js/lead.js
+	modified:   docroot/app/bundles/LeadBundle/Config/config.php
+	modified:   docroot/app/bundles/LeadBundle/Controller/AjaxController.php
+	modified:   docroot/app/bundles/LeadBundle/Controller/Api/CompanyApiController.php
+	modified:   docroot/app/bundles/LeadBundle/Controller/Api/CustomFieldsApiControllerTrait.php
+	modified:   docroot/app/bundles/LeadBundle/Controller/Api/LeadApiController.php
+	modified:   docroot/app/bundles/LeadBundle/Controller/AuditlogController.php
+	modified:   docroot/app/bundles/LeadBundle/Controller/CompanyController.php
+	modified:   docroot/app/bundles/LeadBundle/Controller/LeadController.php
+	modified:   docroot/app/bundles/LeadBundle/Controller/TimelineController.php
+	modified:   docroot/app/bundles/LeadBundle/Entity/Company.php
+	modified:   docroot/app/bundles/LeadBundle/Entity/CompanyRepository.php
+	modified:   docroot/app/bundles/LeadBundle/Entity/DoNotContact.php
+	modified:   docroot/app/bundles/LeadBundle/Entity/DoNotContactRepository.php
+	modified:   docroot/app/bundles/LeadBundle/Entity/Lead.php
+	modified:   docroot/app/bundles/LeadBundle/Entity/LeadEventLogRepository.php
+	modified:   docroot/app/bundles/LeadBundle/Entity/LeadField.php
+	modified:   docroot/app/bundles/LeadBundle/Entity/LeadFieldRepository.php
+	modified:   docroot/app/bundles/LeadBundle/Entity/PointsChangeLogRepository.php
+	modified:   docroot/app/bundles/LeadBundle/Entity/StagesChangeLog.php
+	modified:   docroot/app/bundles/LeadBundle/Entity/StagesChangeLogRepository.php
+	modified:   docroot/app/bundles/LeadBundle/Entity/TimelineTrait.php
+	modified:   docroot/app/bundles/LeadBundle/Entity/UtmTag.php
+	modified:   docroot/app/bundles/LeadBundle/Entity/UtmTagRepository.php
+	modified:   docroot/app/bundles/LeadBundle/EventListener/ContactExportSchedulerNotificationSubscriber.php
+	modified:   docroot/app/bundles/LeadBundle/EventListener/DynamicContentSubscriber.php
+	modified:   docroot/app/bundles/LeadBundle/EventListener/LeadSubscriber.php
+	modified:   docroot/app/bundles/LeadBundle/EventListener/ReportSubscriber.php
+	modified:   docroot/app/bundles/LeadBundle/EventListener/TimelineEventLogSegmentSubscriber.php
+	modified:   docroot/app/bundles/LeadBundle/EventListener/TypeOperatorSubscriber.php
+	modified:   docroot/app/bundles/LeadBundle/Field/Notification/CustomFieldNotification.php
+	modified:   docroot/app/bundles/LeadBundle/Form/Type/CampaignConditionLeadPageHitType.php
+	modified:   docroot/app/bundles/LeadBundle/Form/Type/CompanyListType.php
+	modified:   docroot/app/bundles/LeadBundle/Form/Type/CompanyMergeType.php
+	modified:   docroot/app/bundles/LeadBundle/Form/Type/CompanyType.php
+	modified:   docroot/app/bundles/LeadBundle/Form/Type/EmailType.php
+	modified:   docroot/app/bundles/LeadBundle/Form/Type/EntityFieldsBuildFormTrait.php
+	modified:   docroot/app/bundles/LeadBundle/Form/Type/FieldType.php
+	modified:   docroot/app/bundles/LeadBundle/Form/Type/LeadImportFieldType.php
+	modified:   docroot/app/bundles/LeadBundle/Form/Type/LeadImportType.php
+	modified:   docroot/app/bundles/LeadBundle/Form/Type/ListType.php
+	modified:   docroot/app/bundles/LeadBundle/Form/Type/NoteType.php
+	modified:   docroot/app/bundles/LeadBundle/Helper/FormFieldHelper.php
+	modified:   docroot/app/bundles/LeadBundle/LeadEvents.php
+	modified:   docroot/app/bundles/LeadBundle/Model/CompanyModel.php
+	modified:   docroot/app/bundles/LeadBundle/Model/FieldModel.php
+	modified:   docroot/app/bundles/LeadBundle/Model/LeadModel.php
+	modified:   docroot/app/bundles/LeadBundle/Model/ListModel.php
+	modified:   docroot/app/bundles/LeadBundle/Resources/views/Auditlog/_list.html.twig
+	modified:   docroot/app/bundles/LeadBundle/Resources/views/Company/company.html.twig
+	modified:   docroot/app/bundles/LeadBundle/Resources/views/Company/form_embedded.html.twig
+	modified:   docroot/app/bundles/LeadBundle/Resources/views/Company/form_fields.html.twig
+	modified:   docroot/app/bundles/LeadBundle/Resources/views/Company/form_standalone.html.twig
+	modified:   docroot/app/bundles/LeadBundle/Resources/views/Company/list.html.twig
+	modified:   docroot/app/bundles/LeadBundle/Resources/views/Company/list_rows_contacts.html.twig
+	modified:   docroot/app/bundles/LeadBundle/Resources/views/Field/form.html.twig
+	modified:   docroot/app/bundles/LeadBundle/Resources/views/Field/list.html.twig
+	modified:   docroot/app/bundles/LeadBundle/Resources/views/Field/properties_boolean.html.twig
+	deleted:    docroot/app/bundles/LeadBundle/Resources/views/Field/properties_textarea.html.twig
+	modified:   docroot/app/bundles/LeadBundle/Resources/views/FormTheme/ActionUpdateCompany/_updatecompany_action_widget.html.twig
+	modified:   docroot/app/bundles/LeadBundle/Resources/views/FormTheme/ActionUpdateLead/_updatelead_action_widget.html.twig
+	modified:   docroot/app/bundles/LeadBundle/Resources/views/FormTheme/ContactCampaignsCondition/_campaignevent_lead_campaigns_widget.html.twig
+	modified:   docroot/app/bundles/LeadBundle/Resources/views/FormTheme/FieldValueCondition/_campaignevent_lead_field_value_widget.html.twig
+	modified:   docroot/app/bundles/LeadBundle/Resources/views/FormTheme/Filter/_leadlist_filters_entry_widget.html.twig
+	modified:   docroot/app/bundles/LeadBundle/Resources/views/Import/_list_row.html.twig
+	modified:   docroot/app/bundles/LeadBundle/Resources/views/Import/_upload_form.html.twig
+	modified:   docroot/app/bundles/LeadBundle/Resources/views/Import/details.html.twig
+	modified:   docroot/app/bundles/LeadBundle/Resources/views/Import/list.html.twig
+	modified:   docroot/app/bundles/LeadBundle/Resources/views/Import/progress.html.twig
+	modified:   docroot/app/bundles/LeadBundle/Resources/views/Integration/index.html.twig
+	modified:   docroot/app/bundles/LeadBundle/Resources/views/Lead/_devices.html.twig
+	modified:   docroot/app/bundles/LeadBundle/Resources/views/Lead/_dnc_large.html.twig
+	modified:   docroot/app/bundles/LeadBundle/Resources/views/Lead/_filter.html.twig
+	modified:   docroot/app/bundles/LeadBundle/Resources/views/Lead/_list.html.twig
+	modified:   docroot/app/bundles/LeadBundle/Resources/views/Lead/_list_column_points.html.twig
+	modified:   docroot/app/bundles/LeadBundle/Resources/views/Lead/_list_column_stage.html.twig
+	modified:   docroot/app/bundles/LeadBundle/Resources/views/Lead/company.html.twig
+	modified:   docroot/app/bundles/LeadBundle/Resources/views/Lead/dnc_small.html.twig
+	modified:   docroot/app/bundles/LeadBundle/Resources/views/Lead/form.html.twig
+	modified:   docroot/app/bundles/LeadBundle/Resources/views/Lead/frequency.html.twig
+	modified:   docroot/app/bundles/LeadBundle/Resources/views/Lead/grid_card.html.twig
+	modified:   docroot/app/bundles/LeadBundle/Resources/views/Lead/lead.html.twig
+	modified:   docroot/app/bundles/LeadBundle/Resources/views/Lead/lead_stats.html.twig
+	modified:   docroot/app/bundles/LeadBundle/Resources/views/Lead/list.html.twig
+	modified:   docroot/app/bundles/LeadBundle/Resources/views/Lead/list_rows.html.twig
+	modified:   docroot/app/bundles/LeadBundle/Resources/views/Lead/merge.html.twig
+	modified:   docroot/app/bundles/LeadBundle/Resources/views/LeadCampaigns/index.html.twig
+	modified:   docroot/app/bundles/LeadBundle/Resources/views/LeadLists/index.html.twig
+	modified:   docroot/app/bundles/LeadBundle/Resources/views/List/_list_row.html.twig
+	modified:   docroot/app/bundles/LeadBundle/Resources/views/List/details.html.twig
+	modified:   docroot/app/bundles/LeadBundle/Resources/views/List/form.html.twig
+	modified:   docroot/app/bundles/LeadBundle/Resources/views/List/list.html.twig
+	modified:   docroot/app/bundles/LeadBundle/Resources/views/Note/_list_filter_form.html.twig
+	modified:   docroot/app/bundles/LeadBundle/Resources/views/Note/list.html.twig
+	modified:   docroot/app/bundles/LeadBundle/Resources/views/Note/note.html.twig
+	modified:   docroot/app/bundles/LeadBundle/Resources/views/Social/index.html.twig
+	modified:   docroot/app/bundles/LeadBundle/Resources/views/SubscribedEvents/Search/global.html.twig
+	modified:   docroot/app/bundles/LeadBundle/Resources/views/Timeline/_list.html.twig
+	modified:   docroot/app/bundles/LeadBundle/Resources/views/Timeline/_list_filter_form.html.twig
+	modified:   docroot/app/bundles/LeadBundle/Resources/views/Timeline/plugin_list.html.twig
+	modified:   docroot/app/bundles/LeadBundle/Resources/views/Timeline/plugin_table.html.twig
+	modified:   docroot/app/bundles/LeadBundle/Translations/en_US/flashes.ini
+	modified:   docroot/app/bundles/LeadBundle/Translations/en_US/messages.ini
+	modified:   docroot/app/bundles/LeadBundle/Translations/en_US/validators.ini
+	modified:   docroot/app/bundles/MarketplaceBundle/EventListener/MenuSubscriber.php
+	modified:   docroot/app/bundles/MarketplaceBundle/Resources/views/Package/detail.html.twig
+	modified:   docroot/app/bundles/MarketplaceBundle/Resources/views/Package/install.html.twig
+	modified:   docroot/app/bundles/MarketplaceBundle/Resources/views/Package/list.html.twig
+	modified:   docroot/app/bundles/MarketplaceBundle/Resources/views/Package/remove.html.twig
+	modified:   docroot/app/bundles/MarketplaceBundle/Translations/en_US/messages.ini
+	modified:   docroot/app/bundles/NotificationBundle/Assets/js/notification.js
+	modified:   docroot/app/bundles/NotificationBundle/Config/config.php
+	modified:   docroot/app/bundles/NotificationBundle/Entity/StatRepository.php
+	modified:   docroot/app/bundles/NotificationBundle/EventListener/ReportSubscriber.php
+	modified:   docroot/app/bundles/NotificationBundle/Resources/views/MobileNotification/_list.html.twig
+	modified:   docroot/app/bundles/NotificationBundle/Resources/views/MobileNotification/details.html.twig
+	modified:   docroot/app/bundles/NotificationBundle/Resources/views/MobileNotification/form.html.twig
+	modified:   docroot/app/bundles/NotificationBundle/Resources/views/MobileNotification/list.html.twig
+	modified:   docroot/app/bundles/NotificationBundle/Resources/views/Notification/_list.html.twig
+	modified:   docroot/app/bundles/NotificationBundle/Resources/views/Notification/details.html.twig
+	modified:   docroot/app/bundles/NotificationBundle/Resources/views/Notification/form.html.twig
+	modified:   docroot/app/bundles/NotificationBundle/Resources/views/Notification/list.html.twig
+	modified:   docroot/app/bundles/NotificationBundle/Resources/views/Notification/preview.html.twig
+	modified:   docroot/app/bundles/NotificationBundle/Translations/en_US/messages.ini
+	modified:   docroot/app/bundles/PageBundle/Entity/HitRepository.php
+	modified:   docroot/app/bundles/PageBundle/Entity/TrackableRepository.php
+	modified:   docroot/app/bundles/PageBundle/Entity/VideoHitRepository.php
+	modified:   docroot/app/bundles/PageBundle/Event/UntrackableUrlsEvent.php
+	modified:   docroot/app/bundles/PageBundle/EventListener/LeadSubscriber.php
+	modified:   docroot/app/bundles/PageBundle/EventListener/ReportSubscriber.php
+	modified:   docroot/app/bundles/PageBundle/Form/Type/PageType.php
+	modified:   docroot/app/bundles/PageBundle/Model/PageModel.php
+	modified:   docroot/app/bundles/PageBundle/Model/TrackableModel.php
+	modified:   docroot/app/bundles/PageBundle/Resources/views/FormTheme/Point/pointaction_urlhit_widget.html.twig
+	modified:   docroot/app/bundles/PageBundle/Resources/views/Page/_list.html.twig
+	modified:   docroot/app/bundles/PageBundle/Resources/views/Page/details.html.twig
+	modified:   docroot/app/bundles/PageBundle/Resources/views/Page/form.html.twig
+	modified:   docroot/app/bundles/PageBundle/Resources/views/Page/list.html.twig
+	modified:   docroot/app/bundles/PageBundle/Resources/views/Result/list.html.twig
+	modified:   docroot/app/bundles/PageBundle/Resources/views/SubscribedEvents/AbTest/bargraph.html.twig
+	modified:   docroot/app/bundles/PageBundle/Resources/views/SubscribedEvents/Search/global.html.twig
+	modified:   docroot/app/bundles/PageBundle/Resources/views/Trackable/click_counts.html.twig
+	modified:   docroot/app/bundles/PageBundle/Translations/en_US/messages.ini
+	modified:   docroot/app/bundles/PluginBundle/Config/config.php
+	modified:   docroot/app/bundles/PluginBundle/Form/Type/DetailsType.php
+	modified:   docroot/app/bundles/PluginBundle/Form/Type/FieldsTypeTrait.php
+	modified:   docroot/app/bundles/PluginBundle/Integration/AbstractIntegration.php
+	modified:   docroot/app/bundles/PluginBundle/Resources/views/FormTheme/Integration/layout.html.twig
+	modified:   docroot/app/bundles/PluginBundle/Resources/views/Integration/form.html.twig
+	modified:   docroot/app/bundles/PluginBundle/Resources/views/Integration/grid.html.twig
+	modified:   docroot/app/bundles/PluginBundle/Translations/en_US/messages.ini
+	modified:   docroot/app/bundles/PointBundle/Config/config.php
+	modified:   docroot/app/bundles/PointBundle/Controller/AjaxController.php
+	modified:   docroot/app/bundles/PointBundle/Controller/TriggerController.php
+	modified:   docroot/app/bundles/PointBundle/Entity/TriggerEvent.php
+	modified:   docroot/app/bundles/PointBundle/EventListener/LeadSubscriber.php
+	modified:   docroot/app/bundles/PointBundle/Form/Type/GenericPointSettingsType.php
+	modified:   docroot/app/bundles/PointBundle/Form/Type/PointActionType.php
+	modified:   docroot/app/bundles/PointBundle/Form/Type/PointType.php
+	modified:   docroot/app/bundles/PointBundle/Helper/EventHelper.php
+	modified:   docroot/app/bundles/PointBundle/Model/TriggerEventModel.php
+	modified:   docroot/app/bundles/PointBundle/Resources/views/Event/actions.html.twig
+	modified:   docroot/app/bundles/PointBundle/Resources/views/Group/list.html.twig
+	modified:   docroot/app/bundles/PointBundle/Resources/views/Point/_list.html.twig
+	modified:   docroot/app/bundles/PointBundle/Resources/views/Point/list.html.twig
+	modified:   docroot/app/bundles/PointBundle/Resources/views/Trigger/_list.html.twig
+	modified:   docroot/app/bundles/PointBundle/Resources/views/Trigger/form.html.twig
+	modified:   docroot/app/bundles/PointBundle/Resources/views/Trigger/list.html.twig
+	modified:   docroot/app/bundles/PointBundle/Translations/en_US/messages.ini
+	modified:   docroot/app/bundles/ReportBundle/Assets/js/report.js
+	modified:   docroot/app/bundles/ReportBundle/Builder/MauticReportBuilder.php
+	modified:   docroot/app/bundles/ReportBundle/Config/config.php
+	modified:   docroot/app/bundles/ReportBundle/Event/ReportQueryEvent.php
+	modified:   docroot/app/bundles/ReportBundle/Form/Type/ReportType.php
+	modified:   docroot/app/bundles/ReportBundle/Model/ReportModel.php
+	modified:   docroot/app/bundles/ReportBundle/Resources/views/FormTheme/Report/layout.html.twig
+	modified:   docroot/app/bundles/ReportBundle/Resources/views/Graph/Pie.html.twig
+	modified:   docroot/app/bundles/ReportBundle/Resources/views/Report/_details_content_header.html.twig
+	modified:   docroot/app/bundles/ReportBundle/Resources/views/Report/_details_report_content.html.twig
+	modified:   docroot/app/bundles/ReportBundle/Resources/views/Report/_list.html.twig
+	modified:   docroot/app/bundles/ReportBundle/Resources/views/Report/details.html.twig
+	modified:   docroot/app/bundles/ReportBundle/Resources/views/Report/form.html.twig
+	modified:   docroot/app/bundles/ReportBundle/Resources/views/Report/list.html.twig
+	modified:   docroot/app/bundles/ReportBundle/Resources/views/SubscribedEvents/Dashboard/widget.html.twig
+	modified:   docroot/app/bundles/ReportBundle/Translations/en_US/messages.ini
+	modified:   docroot/app/bundles/SmsBundle/Config/config.php
+	modified:   docroot/app/bundles/SmsBundle/EventListener/LeadSubscriber.php
+	modified:   docroot/app/bundles/SmsBundle/EventListener/ReplySubscriber.php
+	modified:   docroot/app/bundles/SmsBundle/Resources/views/Sms/details.html.twig
+	modified:   docroot/app/bundles/SmsBundle/Resources/views/Sms/form.html.twig
+	modified:   docroot/app/bundles/SmsBundle/Resources/views/Sms/index.html.twig
+	modified:   docroot/app/bundles/SmsBundle/Resources/views/Sms/list.html.twig
+	modified:   docroot/app/bundles/SmsBundle/Resources/views/Sms/list_stats.html.twig
+	modified:   docroot/app/bundles/SmsBundle/Translations/en_US/messages.ini
+	modified:   docroot/app/bundles/StageBundle/Resources/views/Stage/list.html.twig
+	modified:   docroot/app/bundles/UserBundle/Assets/css/user.css
+	modified:   docroot/app/bundles/UserBundle/Assets/js/user.js
+	modified:   docroot/app/bundles/UserBundle/Config/config.php
+	modified:   docroot/app/bundles/UserBundle/Controller/UserController.php
+	modified:   docroot/app/bundles/UserBundle/Entity/User.php
+	modified:   docroot/app/bundles/UserBundle/Form/Type/ContactType.php
+	modified:   docroot/app/bundles/UserBundle/Form/Type/PasswordResetConfirmType.php
+	modified:   docroot/app/bundles/UserBundle/Form/Type/UserType.php
+	modified:   docroot/app/bundles/UserBundle/Model/UserModel.php
+	modified:   docroot/app/bundles/UserBundle/Resources/views/Profile/index.html.twig
+	modified:   docroot/app/bundles/UserBundle/Resources/views/Role/form.html.twig
+	modified:   docroot/app/bundles/UserBundle/Resources/views/Role/list.html.twig
+	modified:   docroot/app/bundles/UserBundle/Resources/views/Security/base.html.twig
+	modified:   docroot/app/bundles/UserBundle/Resources/views/Security/login.html.twig
+	modified:   docroot/app/bundles/UserBundle/Resources/views/User/list.html.twig
+	modified:   docroot/app/bundles/UserBundle/Resources/views/User/recent_activity.html.twig
+	modified:   docroot/app/bundles/UserBundle/Translations/en_US/messages.ini
+	modified:   docroot/app/bundles/WebhookBundle/Config/config.php
+	modified:   docroot/app/bundles/WebhookBundle/Form/Type/WebhookType.php
+	modified:   docroot/app/bundles/WebhookBundle/Resources/views/Helper/labelcode.html.twig
+	modified:   docroot/app/bundles/WebhookBundle/Resources/views/Webhook/details.html.twig
+	modified:   docroot/app/bundles/WebhookBundle/Resources/views/Webhook/form.html.twig
+	modified:   docroot/app/bundles/WebhookBundle/Resources/views/Webhook/list.html.twig
+	modified:   docroot/app/bundles/WebhookBundle/Translations/en_US/messages.ini
+	modified:   docroot/app/composer.json
+	modified:   docroot/app/config/security.php
+	modified:   docroot/app/migrations/Migration.template
+	modified:   docroot/app/migrations/Version20210112162046.php
+	modified:   docroot/app/migrations/Version20210217115150.php
+	modified:   docroot/app/migrations/Version20230606111852.php
+	modified:   docroot/app/migrations/Version20231110103625.php
+	modified:   docroot/app/release_metadata.json
+	modified:   docroot/media/css/app.css
+	modified:   docroot/media/css/libraries.css
+	modified:   docroot/media/css/mediaelementplayer.min.css
+	modified:   docroot/media/css/modal.min.css
+	modified:   docroot/media/js/app.js
+	modified:   docroot/media/js/jquery.min.js
+	modified:   docroot/media/js/libraries.js
+	modified:   docroot/media/js/mautic-form.js
+	modified:   docroot/media/libraries/ckeditor/ckeditor.js
+	modified:   docroot/media/libraries/ckeditor/ckeditor.js.map
+	modified:   docroot/plugins/GrapesJsBuilderBundle/Assets/library/js/asset.service.js
+	modified:   docroot/plugins/GrapesJsBuilderBundle/Assets/library/js/builder.js
+	modified:   docroot/plugins/GrapesJsBuilderBundle/Assets/library/js/builder.service.js
+	modified:   docroot/plugins/GrapesJsBuilderBundle/Assets/library/js/dist/builder.css
+	modified:   docroot/plugins/GrapesJsBuilderBundle/Assets/library/js/dist/builder.js
+	modified:   docroot/plugins/GrapesJsBuilderBundle/Assets/library/js/grapesjs-custom.css
+	modified:   docroot/plugins/GrapesJsBuilderBundle/Assets/library/js/storage.service.js
+	modified:   docroot/plugins/GrapesJsBuilderBundle/Config/config.php
+	modified:   docroot/plugins/GrapesJsBuilderBundle/Controller/FileManagerController.php
+	modified:   docroot/plugins/GrapesJsBuilderBundle/Demo/mautic/full.html
+	modified:   docroot/plugins/GrapesJsBuilderBundle/Demo/mautic/index.html
+	modified:   docroot/plugins/GrapesJsBuilderBundle/Entity/GrapesJsBuilder.php
+	modified:   docroot/plugins/GrapesJsBuilderBundle/EventSubscriber/EmailSubscriber.php
+	modified:   docroot/plugins/GrapesJsBuilderBundle/Helper/FileManager.php
+	modified:   docroot/plugins/GrapesJsBuilderBundle/Model/GrapesJsBuilderModel.php
+	modified:   docroot/plugins/GrapesJsBuilderBundle/package-lock.json
+	modified:   docroot/plugins/GrapesJsBuilderBundle/package.json
+	modified:   docroot/plugins/MauticClearbitBundle/Config/config.php
+	modified:   docroot/plugins/MauticClearbitBundle/Controller/PublicController.php
+	modified:   docroot/plugins/MauticClearbitBundle/EventListener/ButtonSubscriber.php
+	modified:   docroot/plugins/MauticCloudStorageBundle/Config/config.php
+	modified:   docroot/plugins/MauticCrmBundle/Api/SalesforceApi.php
+	modified:   docroot/plugins/MauticCrmBundle/Integration/SalesforceIntegration.php
+	modified:   docroot/plugins/MauticCrmBundle/Translations/en_US/messages.ini
+	modified:   docroot/plugins/MauticEmailMarketingBundle/Config/config.php
+	modified:   docroot/plugins/MauticFocusBundle/Assets/js/focus.js
+	modified:   docroot/plugins/MauticFocusBundle/Form/Type/FocusType.php
+	modified:   docroot/plugins/MauticFocusBundle/Resources/views/Builder/Bar/index.html.twig
+	modified:   docroot/plugins/MauticFocusBundle/Resources/views/Builder/content.html.twig
+	modified:   docroot/plugins/MauticFocusBundle/Resources/views/Focus/_list.html.twig
+	modified:   docroot/plugins/MauticFocusBundle/Resources/views/Focus/details.html.twig
+	modified:   docroot/plugins/MauticFocusBundle/Resources/views/Focus/form.html.twig
+	modified:   docroot/plugins/MauticFocusBundle/Resources/views/Focus/list.html.twig
+	modified:   docroot/plugins/MauticFocusBundle/Translations/en_US/messages.ini
+	modified:   docroot/plugins/MauticFullContactBundle/Config/config.php
+	modified:   docroot/plugins/MauticFullContactBundle/Controller/PublicController.php
+	modified:   docroot/plugins/MauticFullContactBundle/EventListener/ButtonSubscriber.php
+	modified:   docroot/plugins/MauticGmailBundle/Config/config.php
+	modified:   docroot/plugins/MauticOutlookBundle/Config/config.php
+	modified:   docroot/plugins/MauticSocialBundle/Config/config.php
+	modified:   docroot/plugins/MauticSocialBundle/Controller/TweetController.php
+	modified:   docroot/plugins/MauticSocialBundle/Entity/Tweet.php
+	modified:   docroot/plugins/MauticSocialBundle/Form/Type/TwitterCustomType.php
+	modified:   docroot/plugins/MauticSocialBundle/Form/Type/TwitterMentionType.php
+	modified:   docroot/plugins/MauticSocialBundle/Form/Type/TwitterType.php
+	modified:   docroot/plugins/MauticSocialBundle/Resources/views/Integration/Foursquare/Profile/view.html.twig
+	modified:   docroot/plugins/MauticSocialBundle/Resources/views/Integration/Instagram/Profile/view.html.twig
+	modified:   docroot/plugins/MauticSocialBundle/Resources/views/Integration/LinkedIn/Profile/view.html.twig
+	modified:   docroot/plugins/MauticSocialBundle/Resources/views/Integration/Twitter/Profile/view.html.twig
+	modified:   docroot/plugins/MauticSocialBundle/Resources/views/Integration/login.html.twig
+	modified:   docroot/plugins/MauticSocialBundle/Resources/views/Monitoring/details.html.twig
+	modified:   docroot/plugins/MauticSocialBundle/Resources/views/Monitoring/list.html.twig
+	modified:   docroot/plugins/MauticSocialBundle/Resources/views/Tweet/list.html.twig
+	modified:   docroot/plugins/MauticSocialBundle/Translations/en_US/messages.ini
+	modified:   docroot/plugins/MauticTagManagerBundle/Config/config.php
+	modified:   docroot/plugins/MauticTagManagerBundle/Controller/TagController.php
+	modified:   docroot/plugins/MauticTagManagerBundle/Resources/views/Tag/details.html.twig
+	modified:   docroot/plugins/MauticTagManagerBundle/Resources/views/Tag/form.html.twig
+	modified:   docroot/plugins/MauticTagManagerBundle/Resources/views/Tag/list.html.twig
+	modified:   docroot/plugins/MauticTagManagerBundle/Translations/en_US/messages.ini
+	modified:   docroot/themes/blank/composer.json
+	modified:   docroot/themes/blank/html/base.html.twig
+	modified:   docroot/themes/blank/html/email.html.twig
+	modified:   docroot/themes/blank/html/message.html.twig
+	deleted:    docroot/themes/brienz/html/email.mjml.twig
+	deleted:    docroot/themes/confirmme/html/email.mjml.twig
+	modified:   dump.sql.gz
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	docroot/LICENSE.txt
+	docroot/SECURITY.md
+	docroot/app/assets/dashboards/forms-and-assets.json
+	docroot/app/assets/dashboards/landing-pages.json
+	docroot/app/assets/images/flags/Turkiye.png
+	docroot/app/bundles/CampaignBundle/Executioner/Scheduler/Mode/Optimized.php
+	docroot/app/bundles/CampaignBundle/Form/Validator/
+	docroot/app/bundles/CampaignBundle/Twig/
+	docroot/app/bundles/CoreBundle/Assets/css/app/less/components/accordions.less
+	docroot/app/bundles/CoreBundle/Assets/css/app/less/components/modals.less
+	docroot/app/bundles/CoreBundle/Assets/css/app/less/components/tiles.less
+	docroot/app/bundles/CoreBundle/Assets/css/app/less/components/toggle.less
+	docroot/app/bundles/CoreBundle/Assets/css/app/less/spinning.less
+	docroot/app/bundles/CoreBundle/Entity/SkipModifiedInterface.php
+	docroot/app/bundles/CoreBundle/Form/Type/AlertType.php
+	docroot/app/bundles/CoreBundle/Helper/Chart/SeriesPieChart.php
+	docroot/app/bundles/CoreBundle/Resources/views/FormTheme/Fields/
+	docroot/app/bundles/CoreBundle/Resources/views/Helper/_tag.html.twig
+	docroot/app/bundles/CoreBundle/Resources/views/Helper/accordion.html.twig
+	docroot/app/bundles/CoreBundle/Resources/views/Helper/button.html.twig
+	docroot/app/bundles/CoreBundle/Resources/views/Helper/description.html.twig
+	docroot/app/bundles/CoreBundle/Resources/views/Helper/keyboard_shortcuts_helper.html.twig
+	docroot/app/bundles/CoreBundle/Resources/views/Helper/list_quickfilters.html.twig
+	docroot/app/bundles/CoreBundle/Resources/views/Helper/no_information.html.twig
+	docroot/app/bundles/CoreBundle/Resources/views/Helper/protip.html.twig
+	docroot/app/bundles/CoreBundle/Resources/views/Helper/toggletip.html.twig
+	docroot/app/bundles/CoreBundle/Resources/views/Helper/toolbar_page_actions.html.twig
+	docroot/app/bundles/CoreBundle/Resources/views/Menu/quick_help.html.twig
+	docroot/app/bundles/CoreBundle/Resources/views/Modal/
+	docroot/app/bundles/CoreBundle/Resources/views/Notification/inline_notification.html.twig
+	docroot/app/bundles/CoreBundle/Security/Permissions/VirtualPermissions.php
+	docroot/app/bundles/CoreBundle/Service/SearchCommandList.php
+	docroot/app/bundles/CoreBundle/Service/SearchCommandListInterface.php
+	docroot/app/bundles/CoreBundle/Twig/Extension/SearchCommandListExtension.php
+	docroot/app/bundles/DynamicContentBundle/Resources/views/Tokens/
+	docroot/app/bundles/EmailBundle/Assets/js/batch.js
+	docroot/app/bundles/EmailBundle/Assets/js/send.example.js
+	docroot/app/bundles/EmailBundle/Controller/BatchEmailController.php
+	docroot/app/bundles/EmailBundle/Entity/EmailDraft.php
+	docroot/app/bundles/EmailBundle/Entity/EmailDraftRepository.php
+	docroot/app/bundles/EmailBundle/Event/EmailEditSubmitEvent.php
+	docroot/app/bundles/EmailBundle/Form/Type/BatchCategoryType.php
+	docroot/app/bundles/EmailBundle/Helper/EmailConfig.php
+	docroot/app/bundles/EmailBundle/Helper/EmailConfigInterface.php
+	docroot/app/bundles/EmailBundle/Model/EmailActionModel.php
+	docroot/app/bundles/EmailBundle/Model/EmailDraftModel.php
+	docroot/app/bundles/EmailBundle/Resources/views/Batch/
+	docroot/app/bundles/EmailBundle/Resources/views/KeyboardShortcuts/
+	docroot/app/bundles/EmailBundle/Resources/views/Tokens/
+	docroot/app/bundles/FormBundle/Resources/views/Field/companyLookup.html.twig
+	docroot/app/bundles/FormBundle/Resources/views/Tokens/
+	docroot/app/bundles/FormBundle/Views/
+	docroot/app/bundles/LeadBundle/Event/ContactExportEvent.php
+	docroot/app/bundles/LeadBundle/EventListener/ContactExportAuditLogSubscriber.php
+	docroot/app/bundles/LeadBundle/Form/Validator/Constraints/DbRegex.php
+	docroot/app/bundles/LeadBundle/Form/Validator/Constraints/DbRegexValidator.php
+	docroot/app/bundles/LeadBundle/Resources/views/Field/_field_order.html.twig
+	docroot/app/bundles/LeadBundle/Resources/views/KeyboardShortcuts/
+	docroot/app/bundles/LeadBundle/Resources/views/Tokens/
+	docroot/app/bundles/LeadBundle/Services/PeakInteractionTimer.php
+	docroot/app/bundles/PageBundle/Resources/views/Tokens/
+	docroot/app/bundles/UserBundle/Resources/views/Helper/
+	docroot/app/bundles/UserBundle/Resources/views/Profile/images/
+	docroot/app/migrations/Version20201019100000.php
+	docroot/app/migrations/Version20210115065034.php
+	docroot/app/migrations/Version20230506112314.php
+	docroot/app/migrations/Version20230506113422.php
+	docroot/app/migrations/Version20230506113627.php
+	docroot/app/migrations/Version20230506113731.php
+	docroot/app/migrations/Version20230506113812.php
+	docroot/app/migrations/Version20240320081612.php
+	docroot/app/migrations/Version20240611103824.php
+	docroot/app/migrations/Version20240704164714.php
+	docroot/app/migrations/Version20240725105507.php
+	docroot/bin/
+	docroot/codeception.yml
+	docroot/composer.json
+	docroot/composer.lock
+	docroot/config/
+	docroot/critical_migrations.txt
+	docroot/ecs.php
+	docroot/funding.json
+	docroot/media/libraries/ckeditor/translations/
+	docroot/modernizr-config.json
+	docroot/package-lock.json
+	docroot/package.json
+	docroot/phpstan-bootstrap.php
+	docroot/plugins/GrapesJsBuilderBundle/EventSubscriber/SerializerSubscriber.php
+	docroot/plugins/MauticSocialBundle/Resources/views/Tokens/
+	docroot/plugins/MauticTagManagerBundle/Stats/
+	docroot/rector-older-symfony.php
+	docroot/templates/
+	docroot/themes/@defaults/
+	docroot/themes/_1-2-1-2-column/
+	docroot/themes/_1-2-1-column/
+	docroot/themes/_1-2-column/
+	docroot/themes/_1-3-1-3-column/
+	docroot/themes/_1-3-column/
+	docroot/themes/_connect-through-content/
+	docroot/themes/_educate/
+	docroot/themes/_gallery/
+	docroot/themes/_make-announcement/
+	docroot/themes/_showcase/
+	docroot/themes/_simple-text/
+	docroot/themes/_survey/
+	docroot/themes/_welcome/
+	docroot/themes/attract/
+	docroot/themes/creative/
+	docroot/tsconfig.json
+	docroot/var/
+	docroot/vendor/
+	docroot/webpack.config.js
+	st.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")

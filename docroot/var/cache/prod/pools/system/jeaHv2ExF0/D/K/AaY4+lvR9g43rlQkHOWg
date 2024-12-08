@@ -1,0 +1,3 @@
+<?php //MauticPlugin%255CGrapesJsBuilderBundle%255CController%255CGrapesJsController
+
+return [PHP_INT_MAX, []];

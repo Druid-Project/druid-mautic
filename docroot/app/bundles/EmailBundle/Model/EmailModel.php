@@ -28,6 +28,7 @@ use Mautic\CoreBundle\Security\Permissions\CorePermissions;
 use Mautic\CoreBundle\Translation\Translator;
 use Mautic\EmailBundle\EmailEvents;
 use Mautic\EmailBundle\Entity\Email;
+use Mautic\EmailBundle\Entity\EmailRepository;
 use Mautic\EmailBundle\Entity\Stat;
 use Mautic\EmailBundle\Entity\StatDevice;
 use Mautic\EmailBundle\Entity\StatRepository;
@@ -119,10 +120,7 @@ class EmailModel extends FormModel implements AjaxLookupModelInterface
         parent::__construct($em, $security, $dispatcher, $router, $translator, $userHelper, $mauticLogger, $coreParametersHelper);
     }
 
-    /**
-     * @return \Mautic\EmailBundle\Entity\EmailRepository
-     */
-    public function getRepository()
+    public function getRepository(): EmailRepository
     {
         return $this->em->getRepository(Email::class);
     }
@@ -1333,7 +1331,7 @@ class EmailModel extends FormModel implements AjaxLookupModelInterface
             }
         }
 
-        /** @var \Mautic\EmailBundle\Entity\EmailRepository $emailRepo */
+        /** @var EmailRepository $emailRepo */
         $emailRepo = $this->getRepository();
 
         // get email settings such as templates, weights, etc
@@ -1828,7 +1826,7 @@ class EmailModel extends FormModel implements AjaxLookupModelInterface
         $this->addCampaignFilter($q, $campaignId);
         $this->addSegmentFilter($q, $segmentId);
 
-        $result = $q->execute()->fetchAllAssociative();
+        $result = $q->executeQuery()->fetchAllAssociative();
 
         $chart  = new BarChart(array_column($result, 'hour'));
         $counts = array_column($result, 'count');
@@ -2037,7 +2035,7 @@ class EmailModel extends FormModel implements AjaxLookupModelInterface
             $chartQuery->applyDateFilters($q, 'date_read');
         }
 
-        return $q->execute()->fetchAllAssociative();
+        return $q->executeQuery()->fetchAllAssociative();
     }
 
     /**
@@ -2066,7 +2064,7 @@ class EmailModel extends FormModel implements AjaxLookupModelInterface
         $chartQuery->applyFilters($q, $filters);
         $chartQuery->applyDateFilters($q, 'date_added');
 
-        return $q->execute()->fetchAllAssociative();
+        return $q->executeQuery()->fetchAllAssociative();
     }
 
     /**
@@ -2165,8 +2163,14 @@ class EmailModel extends FormModel implements AjaxLookupModelInterface
      *
      * @throws \Doctrine\ORM\ORMException
      */
-    public function sendSampleEmailToUser($email, $users, $leadFields = null, $tokens = [], $assetAttachments = [], $saveStat = true)
-    {
+    public function sendSampleEmailToUser(
+        $email,
+        $users,
+        $leadFields = null,
+        $tokens = [],
+        $assetAttachments = [],
+        $saveStat = true
+    ) {
         if (!$emailId = $email->getId()) {
             return false;
         }
@@ -2183,6 +2187,20 @@ class EmailModel extends FormModel implements AjaxLookupModelInterface
         if (empty($users)) {
             return false;
         }
+
+        // Generate and replace tokens
+        $event = new EmailSendEvent(
+            null,
+            [
+                'content'      => $email->getCustomHtml(),
+                'email'        => $email,
+                'idHash'       => 'xxxxxxxxxxxxxx', // bogus ID
+                'tokens'       => ['{tracking_pixel}' => ''], // Override tracking_pixel
+                'internalSend' => true,
+                'lead'         => $leadFields,
+            ]
+        );
+        $this->dispatcher->dispatch($event, EmailEvents::EMAIL_ON_DISPLAY);
 
         $mailer = $this->mailHelper->getSampleMailer();
         $mailer->setLead($leadFields, true);
