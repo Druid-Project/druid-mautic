@@ -16,6 +16,8 @@
 /app/config/paths_local.php
 /app/config/parameters_defaults.php
 /app/upgrade/
+/dump.sql.gz
+/docroot/config/local.php
 # Cache and logs
 /app/cache/*
 !/app/cache/.gitkeep
