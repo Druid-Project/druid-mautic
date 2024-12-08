@@ -16,6 +16,8 @@
 /app/config/paths_local.php
 /app/config/parameters_defaults.php
 /app/upgrade/
+/dump.sql.gz
+/docroot/config/local.php
 # Cache and logs
 /app/cache/*
 !/app/cache/.gitkeep
@@ -116,7 +118,7 @@
 /upgrade
 /upgrade_errors.txt
 /translations
-
+/docroot_backup
 # Unnecessary files and folders
 .idea
 .vscode
@@ -147,17 +149,16 @@ Thumbs.db
 *.pid.lockfile.lockfile.lockfile.lockfile.lock
 *.pid.lockfile.lockfile.lockfile.lockfile.lockfile
 *.pid.lockfile.lockfile.lockfile.lockfile.lockfile.lock
-*.pid.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile
 *.pid.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lock
-*.pid.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile
 *.pid.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lock
-*.pid.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile
+*.pid.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lock
 *.pid.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lock
-*.pid.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile
+*.pid.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lock
 *.pid.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lock
 *.pid.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lock
 *.pid.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lock
 *.pid.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lock
+*.pid.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lock
 *.pid.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lock
 *.pid.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lock
 *.pid.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lock
@@ -180,8 +181,8 @@ Thumbs.db
 *.pid.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lock
 *.pid.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lock
 *.pid.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lock
-*.pid.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lock
-/dump.sql.gz
-/dump.sql
-/mautic.sql
-/mautic.sql.gz
+*.pid.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lock
+*.pid.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lock
+*.pid.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lock
+*.pid.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lock
+*.pid.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile.lockfile
